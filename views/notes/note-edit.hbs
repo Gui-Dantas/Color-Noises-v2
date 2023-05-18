@@ -52,7 +52,7 @@
                   <li><a href="/bluenoise">Blue Noise</a></li>
                   <li><a href="/purplenoise">Purple Noise</a></li>
                   <li><a href="/brownnoise">Brown Noise</a></li>
-                  <li><a href="/greynoise">Grey Noise</a></li>
+                  <li><a href="">Grey Noise</a></li>
                   
                 </ul>
               <li><a class="nav-link scrollto " href="/notes">Notes</a></li>
@@ -71,16 +71,14 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-8">
+        <div class="col-xl-5">
           <h1> Edit Note </h1>
           <form action="/notes/{{_id}}/edit" method="post">
           <div class="form-group">
-            <label>
-              <textarea name="note" cols="30" rows="4" class="form-control">{{note}}
+              <textarea name="note" cols="30" rows="8" class="form-control">{{note}}
               </textarea>
-            </label>
           </div>
-          <button type="submit">Save Changes</button>
+          <button class="changes" type="submit">Save Changes</button>
         </form>
         </div>
       </div>

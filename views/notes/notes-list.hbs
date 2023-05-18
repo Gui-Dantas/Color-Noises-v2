@@ -71,21 +71,25 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h1> Your Notes</h1>
+        <div class="col-xl-10" style="height:650px">
+          <h1>You may be surprised to learn that one of your best wellness tools is actually writing down your own thoughts. Journaling offers an array of benefits — from easing stress to sparking self-discovery.</h1>
+          <br>
+          <h2>What are you thinking right now? </h2>
           <div class="notes-create">
-             <a href="/notes/create">Create Note</a>
+             <a href="/notes/create">Note down your thoughts</a>
           </div>
           <hr>
           <br />
-          <div class="all-notes">
           {{#each notes}}
-            <div>
+          <div class="all-notes">
               <h3>{{this.note}}</h3>
-              <a href="/notes/{{_id}}/edit">Edit</a>
+               </div>
+               <div class="butons-diplay">
+              <a class="edit" href="/notes/{{_id}}/edit">Edit</a>
               <form action="/notes/{{_id}}/delete" method="post">
-                <button type="submit">Delete</button>
+                <button class="delete" type="submit">Delete</button>
               </form>
+              </div>
               </div>
             </div>
           {{/each}}
