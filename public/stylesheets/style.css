@@ -57,12 +57,13 @@ audio {
 }
 
 .create-button {
+  margin-left: 175px;
   width: 100px;
   justify-content: center;
   background-color: #009961;
   border-radius: 10px;
   color: whitesmoke;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .changes{
