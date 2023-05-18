@@ -56,8 +56,6 @@
                   
                 </ul>
               <li><a class="nav-link scrollto " href="/notes">Notes</a></li>
-              <li><a class="nav-link scrollto" href="#favouritelist">Favourite list</a></li>
-              </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -75,9 +73,9 @@
       <div class="row justify-content-center">
         <div class="col-xl-8">
           <h1> Create Your Note</h1>
-          <form action="/notes/create" method="post">
-            <label><textarea name="description" cols="30" rows="4"></textarea></label>
-              <button type="submit">Create</button>
+          <form class="create-form" action="/notes/create" method="post">
+          <textarea name="description" cols="40" rows="8"></textarea>
+              <button class="create-button" type="submit">Create</button>
         </form>
         </div>
       </div>

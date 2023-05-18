@@ -36,8 +36,8 @@ app.use("/", colorRoutes);
 const notesRoutes = require("./routes/notes.routes");
 app.use("/", notesRoutes);
 
-const favoritelistRoutes = require("./routes/favoritelist.routes");
-app.use("/", favoritelistRoutes);
+const colournoiseRoutes = require("./routes/colournoise.routes");
+app.use("/", colournoiseRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

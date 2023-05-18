@@ -56,8 +56,6 @@
                   
                 </ul>
               <li><a class="nav-link scrollto " href="/notes">Notes</a></li>
-              <li><a class="nav-link scrollto" href="/favouritelist">Favourite list</a></li>
-              </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -74,9 +72,13 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <a href="/notes/create">Create Note</a>
+          <h1> Your Notes</h1>
+          <div class="notes-create">
+             <a href="/notes/create">Create Note</a>
+          </div>
           <hr>
           <br />
+          <div class="all-notes">
           {{#each notes}}
             <div>
               <h3>{{this.note}}</h3>
@@ -84,6 +86,7 @@
               <form action="/notes/{{_id}}/delete" method="post">
                 <button type="submit">Delete</button>
               </form>
+              </div>
             </div>
           {{/each}}
         </div>

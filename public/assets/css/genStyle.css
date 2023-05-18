@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 70vh;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(
+    0deg,
+    rgb(247, 247, 247),
+    23.8%,
+    rgb(252, 221, 221),
+    92%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/background.jpg");
+}
+
+.background {
+  flex-direction: column;
+  height: 5000px;
+  display: flex;
+  background-size: cover;
+}
+
+.topnav {
+  background-color: #213e59;
+  overflow: hidden;
+  padding: 27px 1000px;
+  font-size: 50px;
+  color: white;
+  margin: 10px;
+  display: flex;
+  opacity: 50%;
+  /*     position: sticky; */
+  font-weight: 600;
+}
+
+.colornoise {
+  font-family: "Book Antiqua";
+  color: rgb(178, 236, 236);
+  text-align: center;
+  font-size: 30px;
+}
+
+.welcome {
+  font-family: "Roboto", "Book Antiqua", Palatino;
+  font-size: 40px;
+  letter-spacing: 6px;
+  word-spacing: 1.4px;
+  color: #d7f6ff;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  word-spacing: 4px;
+  color: #d7f6ff;
+  font-weight: 40;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.music-container {
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: rgba(141, 158, 173, 0.6);
+  display: display-box;
+  padding: 0px 0px;
+  margin: 10px 0;
+  z-index: 500;
+  height: 100px;
+  width: 500px;
+  font-size: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderButton {
+  z-index: 50;
+  height: -100px;
+}
+
+.img-container {
+  /*   position: relative; */
+  width: 10px;
+}
+
+/* NEED TO MAKE A CIRCLE FOR WHAT COLOR IT IS */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  border: 0;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0 20px;
+  width: 70%;
+  text-align: center;
+}
+.slider-container {
+  height: 70px;
+  margin-bottom: 60px;
+  width: 700px;
+}
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  justify-content: left;
+  appearance: none;
+  width: 80%; /* Full-width */
+  height: 100px;
+  /* background-image: linear-gradient(to right, rgba(46, 0, 252,1), rgba(165, 42, 42, 1));  */
+  /* background-image: linear-gradient(to right, rgba(255, 192, 203,1) 14.29%,rgba(255, 192, 203,1),rgba(46, 0, 252,1),rgba(46, 0, 252,1),rgba(255, 255, 255, 1),rgba(255, 255, 255, 1), rgba(165, 42, 42, 1),rgba(165, 42, 42, 1),rgba(50, 168, 82), rgba(50, 168, 82), rgba(255, 165, 0),rgba(255, 165, 0),rgb(128, 128, 128),rgb(128, 128, 128));  */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 8%,
+    rgba(252, 169, 169, 0.995) 15%,
+    rgb(35, 179, 241) 40%,
+    rgb(168, 34, 230) 60%,
+    rgb(176, 27, 27) 75%,
+    rgb(175, 181, 175) 90%
+  );
+  outline: none;
+  /* opacity: 0.7; Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.4s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.4s;
+  box-shadow: 0 0px 20px 5px rgba(169, 234, 252, 0.6);
+  text-align: center;
+  /*     position: sticky; */
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Mouse-over effects */
+.slider {
+  opacity: 3; /* Fully shown on mouse-over */
+  width: 100%;
+  height: 100%;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 60px; /* Set a specific slider handle width */
+  height: 60px; /* Slider handle height */
+  background: rgb(247, 247, 247);
+  opacity: 0.3;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle heght */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+.navigation {
+  height: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 20px;
+}
+
+#title {
+  margin: 10px 0px 0px 0px;
+}
+
+.playBtn{
+  border: none;
+  background: none;
+  font-size: 24px;
+  margin-left: 40px;
+}
+
+.background{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.pickacolor-img {
+ justify-items: center; 
+ margin: 10px 0px 0px 0px;
+ align-items: center;
+ max-width: 30%;
+ height: 30%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 55px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+h1{
+color: white; 
+font-size: 100px;
+text-align: center ;
+position:-ms-page; 
+}
+
+h2{
+color: white; 
+text-align : center;
+}
+
+.center {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.whitenoise-img {
+max-width:10%;
+height: 30%;
+
+}
+
+.whitefreq-img {
+max-width:10%;
+height:30%
+}

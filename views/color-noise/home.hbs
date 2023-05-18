@@ -56,8 +56,6 @@
                   
                 </ul>
               <li><a class="nav-link scrollto " href="/notes">Notes</a></li>
-               <li><a class="nav-link scrollto" href="/views/favorites/favorites-list.hbs">Favourite list</a></li>
-              </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -74,13 +72,13 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <h1> Welcome! </h1>
+          <h1> Welcome Home </h1>
+          <h2> Customise your own colour noise mix to wash away distracting thoughts</h2>
           <div class="allColors">
           {{#each noises}}
             <div class="card" style="width: 18rem;">
               <img src="{{this.imageUrl}}" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">{{this.name}}</p>
                 <audio controls>
                   <source src="{{this.sound}}" type="audio/ogg" />
                 </audio>
