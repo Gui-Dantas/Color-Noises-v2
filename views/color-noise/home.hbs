@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Welcome home</title>
+  <title>Colour Noise Sanctuary</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,7 +47,6 @@
               <li class="dropdown"><a href="#"><span>Colour Noise</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
     
-                  
                   <li><a href="/whitenoise">White Noise</a></li>
                   <li><a href="/pinknoise">Pink Noise</a></li>
                   <li><a href="/bluenoise">Blue Noise</a></li>
@@ -57,6 +56,8 @@
                   
                 </ul>
               <li><a class="nav-link scrollto " href="/notes">Notes</a></li>
+          
+              </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -68,39 +69,22 @@
     </div>
   </header><!-- End Header -->
 
-
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <h1> Welcome Home </h1>
-          <h2> Customise your own colour noise mix to wash away distracting thoughts</h2>
+          <h2>What are you thinking right now?  </h2>
           <br></br>
-          <span class="allColors">
-          {{#each noises}}
-            <div class="card" >
-              <img src="{{this.imageUrl}}" class="card-img-top" alt="..." />
-              <div class="card-body">
-                </span>
-                
-                  <div class="allSound">
-                <div class>
-                <audio controls>
-                  <source src="{{this.sound}}" class="sound-img-bottom" type="audio/ogg" />
-                </audio>
-                
-              </div>
-            </div>
-            </div>
-            </div>
-          {{/each}}
-          </div>
+          <form action="/notes/create" method="post">
+            <label><textarea name="description" cols="50" rows="10"></textarea></label>
+              <br></br>
+              <button type="submit">Create</button>
+        </form>
         </div>
       </div>
+    </div>
   </section><!-- End Hero -->
-
 
 
 
