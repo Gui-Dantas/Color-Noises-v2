@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Color Noise Generator</title>
+  <title>Welcome home</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,7 +46,8 @@
               <li><a class="nav-link scrollto" href="/home">Home</a></li>
               <li class="dropdown"><a href="#"><span>Colour Noise</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-        
+    
+                  
                   <li><a href="/whitenoise">White Noise</a></li>
                   <li><a href="/pinknoise">Pink Noise</a></li>
                   <li><a href="/bluenoise">Blue Noise</a></li>
@@ -67,31 +68,39 @@
     </div>
   </header><!-- End Header -->
 
+
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <div class="home-text">
           <h1> Welcome Home </h1>
-          <h2> Customise your own colour noise mix to wash away distracting thoughts</h2></div>
-          <br></br>
-          <div class="allColors">
-          <br></br>
+          <h2> Customise your own colour noise mix to wash away distracting thoughts</h2>
+
+          <span class="allColors">
           {{#each noises}}
-            <div class="card">
+            <div class="card" >
               <img src="{{this.imageUrl}}" class="card-img-top" alt="..." />
               <div class="card-body">
+                </span>
+                
+                  <div class="allSound">
+                <div class>
                 <audio controls>
-                  <source src="{{this.sound}}" type="audio/ogg" />
+                  <source src="{{this.sound}}" class="sound-img-bottom" type="audio/ogg" />
                 </audio>
+                
               </div>
+            </div>
+            </div>
             </div>
           {{/each}}
           </div>
         </div>
       </div>
-    </div>
   </section><!-- End Hero -->
+
+
 
  
