@@ -242,6 +242,13 @@ color: white;
 text-align : center;
 }
 
+h7 {
+colour: black
+font-size: 100px;
+text-align: center;
+ 
+}
+
 .center {
   height: 200px;
   position: relative;
