@@ -77,21 +77,18 @@
         <div class="col-xl-8">
           <h1> Welcome Home </h1>
           <h2> Customise your own colour noise mix to wash away distracting thoughts</h2>
-
+           <br></br> 
           <span class="allColors">
           {{#each noises}}
             <div class="card" >
               <img src="{{this.imageUrl}}" class="card-img-top" alt="..." />
               <div class="card-body">
                 </span>
-                
-                  <div class="allSound">
-                <div class>
+                <div class="allSound">
                 <audio controls>
                   <source src="{{this.sound}}" class="sound-img-bottom" type="audio/ogg" />
                 </audio>
-                
-              </div>
+                </div>
             </div>
             </div>
             </div>
@@ -99,7 +96,8 @@
           </div>
         </div>
       </div>
-  </section><!-- End Hero -->
+  </section>
+  </body>
 
 
 
